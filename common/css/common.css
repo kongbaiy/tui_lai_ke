@@ -1,0 +1,68 @@
+@supports (bottom: env(safe-area-inset-bottom)) {
+	body {
+		padding-bottom: env(safe-area-inset-bottom);
+	}
+}
+
+.c-f-d{
+	display: flex;
+	display: -webkit-flex;
+}
+
+.c-f-dc{
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+
+.c-f-cc{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.c-f-cb{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.c-f-ca{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.c-fColumn-cc{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.c-fColumn{
+	display: flex;
+	flex-direction: column;
+}
+
+.c-fColumn-cd{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.c-fColumn-dc{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.c-fColumn-ce{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	
+}
