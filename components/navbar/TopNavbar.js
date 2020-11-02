@@ -1,6 +1,7 @@
 (()=> {
 	const template = `
 		<style>
+			@import url('common/css/reset.css');
 			.top-navbar {
 				position: fixed;
 				top: 0;
