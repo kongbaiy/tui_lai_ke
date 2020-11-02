@@ -64,5 +64,16 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-end;
-	
+}
+
+/* 1rem/100px */
+.c-left-arrowIcon {
+	width: 0.09rem;
+	height: 0.15rem;
+}
+
+.c-text-over_clamp-1{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }

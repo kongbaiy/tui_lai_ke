@@ -14,6 +14,7 @@
 				padding: 0 0.13rem;
 				width: 100%;
 				height: 0.44rem;
+				border-bottom: 1px solid #E6E6E6;
 				background-color: #fff;
 			}
 			
