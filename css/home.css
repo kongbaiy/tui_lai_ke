@@ -1,0 +1,16 @@
+
+.banner {
+	overflow: hidden;
+	position: relative;
+	height: 3.92rem;
+	background-color: #fff;
+}
+
+.banner-img {
+	width: 100%;
+	min-height: 100%;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #fff !important;
+}
