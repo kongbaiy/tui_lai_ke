@@ -1,0 +1,108 @@
+.brand {
+	overflow: hidden;
+	height: 6.03rem;
+	background-image: url(../imgs/750-1206@2x.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.brand-title {
+	position: relative;
+	margin-top: 0.85rem;
+	padding: 0.15rem 0;
+	font-size: 0.24rem;
+	font-family: Source Han Sans CN;
+	font-weight: bold;
+	line-height: 0.41rem;
+	text-align: center;
+	color: #fff;
+}
+
+.brand-title::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0.25rem;
+	height: 0.02rem;
+	background-color: #DC000C;
+}
+
+.brand-service {
+	overflow: hidden;
+	margin: 0.25rem auto 0;
+	width: 3rem;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.brand-service-item {
+	float: left;
+	width: 1.49rem;
+	height: 1.3rem;
+	border-bottom: 1px solid #fff;
+}
+
+
+.brand-service-item:nth-child(2n + 2) {
+	border-left: 1px solid #fff;
+}
+
+.brand-service-item:last-child, .brand-service-item:nth-last-child(2) {
+	border-bottom-color: transparent;
+}
+
+.brand-service-itemImgBox {
+	position: relative;
+	padding-bottom: 0.1rem;
+}
+
+.brand-service-itemImgBox::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0.2rem;
+	height: 0.01rem;
+	background-color: #fff;
+}
+
+.brand-service-itemImg {
+	width: 0.35rem;
+	height: 0.35rem;
+}
+
+.brand-service-itemTitle {
+	margin-top: 0.1rem;
+	font-size: 0.15rem;
+	font-family: Source Han Sans CN;
+	font-weight: bold;
+	color: #fff;
+}
+
+.brand-service-itemText {
+	margin-top: 0.04rem;
+	font-size: 0.1rem;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #fff;
+}
+
+.marketing {
+	padding: 0.35rem 0.38rem;
+	background-image: url(../imgs/marketing_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.marketing-marked-graphBox {
+	margin-top: 0.2rem;
+	text-align: center;
+}
+
+.marketing-marked-graph {
+	width: 0.45rem;
+}
