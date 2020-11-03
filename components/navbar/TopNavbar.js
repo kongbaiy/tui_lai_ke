@@ -2,6 +2,7 @@
 	const template = `
 		<style>
 			@import url('common/css/reset.css');
+			
 			.top-navbar {
 				position: fixed;
 				top: 0;
@@ -96,6 +97,7 @@
 		constructor() {
 		    super();
 			const shadowRoot = this.attachShadow({ mode: 'open' });
+			
 			shadowRoot.innerHTML = template;
 		}
 		
@@ -112,6 +114,10 @@
 		adoptedCallback() {
 			// 自定义元素移动到新的文档
 			// 比如使用 adoptNode 方法在多iframe下移动元素
+		}
+		
+		attributeChangedCallback() {
+			// 当 custom element增加、删除、修改自身属性时，被调用
 		}
 	}
 	customElements.define('top-navbar', TopNavbar);
