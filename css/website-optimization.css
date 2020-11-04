@@ -1,0 +1,188 @@
+.header {
+	overflow: hidden;
+	height: 6.03rem;
+	background-image: url(../imgs/website_optimization_header_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.header-title {
+	position: relative;
+	margin-top: 1.4rem;
+	padding-bottom: 0.2rem;
+	font-size: 0.24rem;
+	font-family: Source Han Sans CN;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+}
+
+.header-title::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0.25rem;
+	height: 0.02rem;
+	background-color: #DC000C;
+}
+
+.header-text {
+	margin: 0.25rem auto 0;
+	width: 3.2rem;
+	height: 3.07rem;
+	font-size: 0.11rem;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	line-height: 0.23rem;
+	color: #fff;
+}
+
+.voice {
+	text-align: center;
+}
+
+.voice-icon {
+	width: 0.18rem;
+}
+
+.voice-text {
+	margin-top: 0.1rem;
+	font-size: 0.1rem;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	line-height: 0.17rem;
+	color: #fff;
+}
+
+.marketing-solution {
+	padding: 0.35rem 0 0.26rem;
+}
+
+.marketing-solution-cell {
+	margin-top: 0.05rem;
+	padding: 0 0.05rem;
+}
+
+.marketing-solution-cell:first-child {
+	margin-top: 0.19rem;
+}
+
+.marketing-solution-cellItem {
+	padding: 0.1rem;
+	width: 1rem;
+	height: 1.05rem;
+	background-image: url(../imgs/marketing_solution_list_item_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.marketing-solution-cellItemIconBox {
+	position: relative;
+	padding-bottom: 0.1rem;
+	text-align: center;
+}
+
+.marketing-solution-cellItemIconBox::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0.25rem;
+	height: 0.02rem;
+	background-color: #DC000C;
+}
+
+.marketing-solution-cellItemIcon {
+	width: 0.35rem;
+	height: 0.35rem;
+}
+
+.marketing-solution-cellItemText {
+	margin-top: 0.15rem;
+	width: 100%;
+	font-size: 0.13rem;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	text-align: center;
+	color: #404040;
+}
+
+.marketing-promotion {
+	padding: 0.35rem 0.23rem;
+	background-image: url(../imgs/marketing_promotion_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.marketing-promotion-nav {
+	margin-top: 0.25rem;
+}
+
+.marketing-promotion-navItem {
+	padding: 0.17rem 0.13rem;
+	width: 1.29rem;
+	border: 1px solid #fff;
+}
+
+.marketing-promotion-navItem_active {
+	border-color: #DC000C;
+	background-color: #DC000C;
+	color: #fff;
+}
+
+.marketing-promotion-navItemTitle {
+	padding-bottom: 0.08rem;
+	border-bottom: 1px solid #fff;
+	font-size: 0.16rem;
+	font-family: Source Han Sans CN;
+	font-weight: bold;
+	line-height: 0.27rem;
+	color: #fff;
+}
+
+.marketing-promotion-navItemText {
+	margin-top: 0.08rem;
+	font-size: 0.1rem;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	line-height: 0.17rem;
+	color: #fff;
+	text-transform: Uppercase;
+}
+
+.marketing-promotion-services {
+	overflow: hidden;
+	margin-top: 0.2rem;
+	background-image: url(../imgs/marketing_promotion_tabel_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.marketing-promotion-servicesItem {
+	float: left;
+	width: 50%;
+	height: 1.1rem;
+}
+
+.marketing-promotion-servicesItemIcon {
+	width: 0.35rem;
+	height: 0.35rem;
+}
+
+.marketing-promotion-servicesItemText {
+	margin-top: 0.15rem;
+	width: 100%;
+	font-size: 0.12rem;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	line-height: 0.21rem;
+	text-align: center;
+	color: #fff;
+}
