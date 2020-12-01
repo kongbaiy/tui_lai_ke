@@ -1,7 +1,7 @@
 .header {
 	overflow: hidden;
 	height: 6.03rem;
-	background-image: url(../imgs/website_optimization_header_bg.png);
+	background-image: url(../imgs/website_optimization_header_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -114,7 +114,7 @@
 
 .marketing-promotion {
 	padding: 0.35rem 0.23rem;
-	background-image: url(../imgs/marketing_promotion_bg.png);
+	background-image: url(../imgs/marketing_promotion_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;

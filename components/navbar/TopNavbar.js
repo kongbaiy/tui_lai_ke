@@ -74,6 +74,7 @@
 			}
 
 			.popup-bg {
+				display: none;
 				position: fixed;
 				top: 0;
 				left: 0;
@@ -84,12 +85,14 @@
 			}
 
 			.popup {
+				transition: all 200ms;
 				box-sizing: border-box;
+				position: relative;
 				overflow-y: scroll;
 				-webkit-overflow-scrolling: touch;
 				position: fixed;
 				top: 0.44rem;
-				right: 0;
+				right: -2.5rem;
 				z-index: 11;
 				padding: 0 0.18rem;
 				width: 2.5rem;
@@ -108,20 +111,60 @@
 
 			.popup-list {
 				overflow: hidden;
+				min-height: 80%;
 			}
 
 			.popup-list-item {
+				display: block;
+				float: left;
+				margin-top: 0.2rem;
+				margin-right: 0.09rem;
 				width: 0.65rem;
 				height: 0.35rem;
 				font-size: 0.14rem;
 				font-family: Source Han Sans CN;
 				font-weight: 400;
 				line-height: 0.35rem;
+				text-align: center;
 				color: #333;
 			}
 			
 			.popup-list-item_active {
 				background-color: #DC000C;
+				color: #fff;
+			}
+
+			.popup-list-item:nth-child(3n) {
+				margin-right: 0;
+			}
+
+			.popup-btnBox {
+				overflow: hidden;
+			}
+
+			.popup-btn {
+				float: left;
+				margin-right: 0.14rem;
+				width: 1rem;
+				height: 0.3rem;
+				background-color: transparent;
+				border: 1px solid #404040;
+				border-radius: 0.03rem;
+				font-size: 0.14rem;
+				font-family: Source Han Sans CN;
+				font-weight: 400;
+				line-height: 0.29rem;
+				text-align: center;
+				color: #404040;
+			}
+
+			.popup-btn:last-child {
+				margin-right: 0;
+			}
+
+			.confirm-btn {
+				background-color: #DC000C;
+				border: 1px solid #DC000C;
 				color: #fff;
 			}
 		</style>
@@ -145,7 +188,26 @@
 		<div class="popup">
 			<p class="popup-title">案例类型</p>
 			<div class="popup-list">
+				<a class="popup-list-item popup-list-item_active">全部</a>
+				<a class="popup-list-item">企业网站</a>
+				<a class="popup-list-item">集团官网</a>
+				<a class="popup-list-item">教育行业</a>
+				<a class="popup-list-item">医疗行业</a>
+				<a class="popup-list-item">机械行业</a>
+				<a class="popup-list-item">设计行业</a>
+				<a class="popup-list-item">律师行业</a>
+				<a class="popup-list-item">美容美发</a>
+				<a class="popup-list-item">婚庆行业</a>
+				<a class="popup-list-item">体育用品</a>
+				<a class="popup-list-item">数据行业</a>
+				<a class="popup-list-item">拓展行业</a>
+				<a class="popup-list-item">其他行业</a>
 			</div>
+
+			<div class="popup-btnBox">
+				<button class="popup-btn reset-btn">重置</button>
+				<button class="popup-btn confirm-btn">确定</button>
+			</div>	
 		</div>
 	`;
 	
@@ -158,6 +220,13 @@
 			const shadowRoot = this.attachShadow({ mode: 'open' });
 			
 			shadowRoot.innerHTML = template;
+			this._root = shadowRoot;
+
+			const menu_el = shadowRoot.querySelector('.menu-icon');
+			const popupbg_el = shadowRoot.querySelector('.popup-bg');
+
+			menu_el.addEventListener('click', this.onMenu.bind(this));
+			popupbg_el.addEventListener('click', this.onPopupBg.bind(this));
 		}
 		
 		connectedCallback() {
@@ -178,6 +247,52 @@
 		attributeChangedCallback() {
 			// 当 custom element增加、删除、修改自身属性时，被调用
 		}
+
+		onMenu() {
+			const popupbg_el = this._root.querySelector('.popup-bg');
+			const popup_el = this._root.querySelector('.popup');
+
+			popupbg_el.setAttribute('style', 'display: block');
+			popup_el.setAttribute('style', 'right:0;');
+			this.setPageStopScroll(true);
+		}
+
+		onPopupBg() {
+			const popupbg_el = this._root.querySelector('.popup-bg');
+			const popup_el = this._root.querySelector('.popup');
+
+			popupbg_el.setAttribute('style', 'display: none;');
+			popup_el.setAttribute('style', 'right: -2.5rem;');
+			this.setPageStopScroll(false);
+		}
+
+		/**
+		 * 设置页面停止滑动
+		 * @param {Boolean} status
+		 * */ 
+		setPageStopScroll(status) {
+			const body = document.body;
+			const body_style = body.getAttribute('style');
+
+			if(status) {
+				body.setAttribute('style', (body_style || '') + 'overflow:hidden;');
+			} else {
+				body.setAttribute('style', body_style.replace('overflow:hidden;', ''));
+			}
+		}
+
+		/**
+		 * 获取url参数
+		 * @param {string} name
+		 * */ 
+		getQueryString(name) { 
+			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+			var r = window.location.search.substr(1).match(reg);
+
+			if (r != null) return unescape(r[2]); 
+
+			return null; 
+		} 
 	}
 	customElements.define('top-navbar', TopNavbar);
 })();

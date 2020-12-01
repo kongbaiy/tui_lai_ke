@@ -1,7 +1,7 @@
 .brand {
 	overflow: hidden;
 	height: 6.03rem;
-	background-image: url(../imgs/750-1206@2x.png);
+	background-image: url(../imgs/750-1206.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -92,7 +92,7 @@
 
 .marketing {
 	padding: 0.35rem 0.38rem;
-	background-image: url(../imgs/marketing_bg.png);
+	background-image: url(../imgs/marketing_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -151,7 +151,7 @@
 
 .website-design {
 	padding: 0.35rem 0.13rem;
-	background-image: url(../imgs/website_design_bg.png);
+	background-image: url(../imgs/website_design_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -285,7 +285,7 @@
 
 .process {
 	padding: 0.35rem 0.38rem 0.47rem;
-	background-image: url(../imgs/750-990@2x.png);
+	background-image: url(../imgs/750-990.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
