@@ -72,6 +72,58 @@
 			.top-navbar-blank {
 				height: 0.44rem;
 			}
+
+			.popup-bg {
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 9;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,0.5);
+			}
+
+			.popup {
+				box-sizing: border-box;
+				overflow-y: scroll;
+				-webkit-overflow-scrolling: touch;
+				position: fixed;
+				top: 0.44rem;
+				right: 0;
+				z-index: 11;
+				padding: 0 0.18rem;
+				width: 2.5rem;
+				height: calc(100% - 1.05rem);
+				background-color: #fff;
+			}
+
+			.popup-title {
+				margin-top: 0.25rem;
+				font-size: 0.17rem;
+				font-family: Source Han Sans CN;
+				font-weight: 500;
+				line-height: 0.24rem;
+				color: #333333;
+			}
+
+			.popup-list {
+				overflow: hidden;
+			}
+
+			.popup-list-item {
+				width: 0.65rem;
+				height: 0.35rem;
+				font-size: 0.14rem;
+				font-family: Source Han Sans CN;
+				font-weight: 400;
+				line-height: 0.35rem;
+				color: #333;
+			}
+			
+			.popup-list-item_active {
+				background-color: #DC000C;
+				color: #fff;
+			}
 		</style>
 		
 		<div class="top-navbar">
@@ -87,7 +139,14 @@
 				<img src="imgs/40-40@2x.png" class="menu-icon" />
 			</div>
 		</div>
+
 		<div class="top-navbar-blank"></div>
+		<div class="popup-bg"></div>
+		<div class="popup">
+			<p class="popup-title">案例类型</p>
+			<div class="popup-list">
+			</div>
+		</div>
 	`;
 	
 	class TopNavbar extends HTMLElement {
