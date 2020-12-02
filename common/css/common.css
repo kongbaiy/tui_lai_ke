@@ -97,7 +97,7 @@
 	background-color: #DC000C;
 }
 
-.module-title-t1, .module-title-t2 {
+.c-module-titleT1, .c-module-titleT2 {
 	position: relative;
 	padding-bottom: 0.08rem;
 	font-size: 0.20rem;
@@ -106,15 +106,15 @@
 	text-align: center;
 }
 
-.module-title-t1 {
+.c-module-titleT1 {
 	color: #262626;
 }
 
-.module-title-t2 {
+.c-module-titleT2 {
 	color: #fff;
 }
 
-.module-title-t1::after, .module-title-t2::after{
+.c-module-titleT1::after, .c-module-titleT2::after{
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -124,15 +124,15 @@
 	height: 0.01rem;
 }
 
-.module-title-t1::after {
+.c-module-titleT1::after {
 	background-color: #262626;
 }
 
-.module-title-t2::after {
+.c-module-titleT2::after {
 	background-color: #fff;
 }
 
-.module-title-t1_english, .module-title-t2_english{
+.c-module-titleT1_english, .c-module-titleT2_english{
 	margin-top: 0.1rem;
 	font-size: 0.12rem;
 	font-family: Source Han Sans CN;
@@ -141,10 +141,10 @@
 	text-transform: Uppercase;
 }
 
-.module-title-t1_english {
+.c-module-titleT1_english {
 	color: #999;
 }
 
-.module-title-t2_english {
+.c-module-titleT2_english {
 	color: #fff;
 }
