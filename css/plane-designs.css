@@ -187,6 +187,87 @@
 	color: #fff;
 }
 
+/* Past Tense */
+.past-tense, 
+.brand-positioning {
+	padding: 0.35rem 0.23rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.past-tense {
+	background-image: url(../imgs/past_tense_bg.jpg);
+}
+
+.past-tense-title_english, 
+.brand-positioning-title_english {
+	position: relative;
+	padding-bottom: 0.1rem;
+	font-size: 0.24rem;
+	font-family: Source Han Sans CN;
+	font-weight: bold;
+	line-height: 0.41rem;
+	text-transform: Uppercase;
+	color: #262626;
+}
+
+.past-tense-title_english::before, 
+.brand-positioning-title_english::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0.25rem;
+	height: 1px;
+	background-color: #262626;
+}
+
+.past-tense-title, 
+.brand-positioning-title {
+	margin-top: 0.1rem;
+	font-size: 0.18rem;
+	font-family: Source Han Sans CN;
+	font-weight: bold;
+	line-height: 0.3rem;
+	color: #262626;
+}
+
+.past-tense-intro, 
+.brand-positioning-intro {
+	margin-top: 0.2rem;
+	font-size: 0.14rem;
+	font-family: Source Han Sans CN;
+	font-weight: 700;
+	line-height: 0.17rem;
+	color: #262626;
+}
+
+.past-tense-text, 
+.brand-positioning-text {
+	margin-top: 0.05rem;
+	font-size: 0.12rem;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	line-height: 0.25rem;
+	color: #262626;
+}
+
+.past-tense-img, 
+.brand-positioning-img {
+	margin-top: 0.2rem;
+	width: 100%;
+}
+
+.mt-20 {
+	margin-top: 0.2rem;
+}
+
+.brand-positioning {
+	background-image: url(../imgs/brand_positioning_bg.jpg);
+}
+
+
 /* 营销推广相关案例 */
 .case {
 	padding: 0.35rem 0.13rem;
