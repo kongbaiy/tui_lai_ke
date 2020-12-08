@@ -72,101 +72,6 @@
 			.top-navbar-blank {
 				height: 0.44rem;
 			}
-
-			.popup-bg {
-				display: none;
-				position: fixed;
-				top: 0;
-				left: 0;
-				z-index: 9;
-				width: 100%;
-				height: 100%;
-				background-color: rgba(0,0,0,0.5);
-			}
-
-			.popup {
-				transition: all 200ms;
-				box-sizing: border-box;
-				position: relative;
-				overflow-y: scroll;
-				-webkit-overflow-scrolling: touch;
-				position: fixed;
-				top: 0.44rem;
-				right: -2.5rem;
-				z-index: 11;
-				padding: 0 0.18rem;
-				width: 2.5rem;
-				height: calc(100% - 1.05rem);
-				background-color: #fff;
-			}
-
-			.popup-title {
-				margin-top: 0.25rem;
-				font-size: 0.17rem;
-				font-family: Source Han Sans CN;
-				font-weight: 500;
-				line-height: 0.24rem;
-				color: #333333;
-			}
-
-			.popup-list {
-				overflow: hidden;
-				min-height: 80%;
-			}
-
-			.popup-list-item {
-				display: block;
-				float: left;
-				margin-top: 0.2rem;
-				margin-right: 0.09rem;
-				width: 0.65rem;
-				height: 0.35rem;
-				font-size: 0.14rem;
-				font-family: Source Han Sans CN;
-				font-weight: 400;
-				line-height: 0.35rem;
-				text-align: center;
-				color: #333;
-			}
-			
-			.popup-list-item_active {
-				background-color: #DC000C;
-				color: #fff;
-			}
-
-			.popup-list-item:nth-child(3n) {
-				margin-right: 0;
-			}
-
-			.popup-btnBox {
-				overflow: hidden;
-			}
-
-			.popup-btn {
-				float: left;
-				margin-right: 0.14rem;
-				width: 1rem;
-				height: 0.3rem;
-				background-color: transparent;
-				border: 1px solid #404040;
-				border-radius: 0.03rem;
-				font-size: 0.14rem;
-				font-family: Source Han Sans CN;
-				font-weight: 400;
-				line-height: 0.29rem;
-				text-align: center;
-				color: #404040;
-			}
-
-			.popup-btn:last-child {
-				margin-right: 0;
-			}
-
-			.confirm-btn {
-				background-color: #DC000C;
-				border: 1px solid #DC000C;
-				color: #fff;
-			}
 		</style>
 		
 		<div class="top-navbar">
@@ -182,33 +87,7 @@
 				<img src="imgs/40-40@2x.png" class="menu-icon" />
 			</div>
 		</div>
-
 		<div class="top-navbar-blank"></div>
-		<div class="popup-bg"></div>
-		<div class="popup">
-			<p class="popup-title">案例类型</p>
-			<div class="popup-list">
-				<a class="popup-list-item popup-list-item_active">全部</a>
-				<a class="popup-list-item">企业网站</a>
-				<a class="popup-list-item">集团官网</a>
-				<a class="popup-list-item">教育行业</a>
-				<a class="popup-list-item">医疗行业</a>
-				<a class="popup-list-item">机械行业</a>
-				<a class="popup-list-item">设计行业</a>
-				<a class="popup-list-item">律师行业</a>
-				<a class="popup-list-item">美容美发</a>
-				<a class="popup-list-item">婚庆行业</a>
-				<a class="popup-list-item">体育用品</a>
-				<a class="popup-list-item">数据行业</a>
-				<a class="popup-list-item">拓展行业</a>
-				<a class="popup-list-item">其他行业</a>
-			</div>
-
-			<div class="popup-btnBox">
-				<button class="popup-btn reset-btn">重置</button>
-				<button class="popup-btn confirm-btn">确定</button>
-			</div>	
-		</div>
 	`;
 	
 	class TopNavbar extends HTMLElement {
@@ -223,10 +102,10 @@
 			this._root = shadowRoot;
 
 			const menu_el = shadowRoot.querySelector('.menu-icon');
-			const popupbg_el = shadowRoot.querySelector('.popup-bg');
+			// const popupbg_el = shadowRoot.querySelector('.popup-bg');
 
-			menu_el.addEventListener('click', this.onMenu.bind(this));
-			popupbg_el.addEventListener('click', this.onPopupBg.bind(this));
+			// menu_el.addEventListener('click', this.onMenu.bind(this));
+			// popupbg_el.addEventListener('click', this.onPopupBg.bind(this));
 		}
 		
 		connectedCallback() {
