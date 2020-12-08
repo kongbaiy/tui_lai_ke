@@ -81,11 +81,13 @@
 	color: #262626;
 }
 
-.module-title_color-fff, .module-title_english-color-fff {
+.module-title_color-fff, 
+.module-title_english-color-fff {
 	color: #fff;
 }
 
-.module-title::after, .module-title_color-fff::after  {
+.module-title::after, 
+.module-title_color-fff::after  {
 	content: "";
 	position: absolute;
 	bottom: 0;
@@ -103,7 +105,8 @@
 	background-color: #fff;
 }
 
-.module-title_english, .module-title_english-color-fff {
+.module-title_english, 
+.module-title_english-color-fff {
 	margin-top: 0.1rem;
 	font-size: 0.12rem;
 	font-family: Source Han Sans CN;
@@ -138,7 +141,8 @@
 	height: 0.35rem;
 }
 
-.website-construction, .our-services-cellItemInfo {
+.website-construction, 
+.our-services-cellItemInfo {
 	margin-left: 0.23rem;
 	height: 0.4rem;
 }
@@ -156,13 +160,15 @@
 	border-left: 1px solid #ccc;
 }
 
-.website-construction-title, .our-services-cellItemTitle {
+.website-construction-title, 
+.our-services-cellItemTitle {
 	font-size: 0.17rem;
 	font-family: Source Han Sans CN;
 	font-weight: 700;
 }
 
-.website-construction-text, .our-services-cellItemText {
+.website-construction-text, 
+.our-services-cellItemText {
 	margin-top: 0.02rem;
 	font-size: 0.12rem;
 	font-family: Source Han Sans CN;
@@ -243,7 +249,8 @@
 	margin-right: 0.13rem;
 }
 
-.services-case-btn, .news-center-btn {
+.services-case-btn, 
+.news-center-btn {
 	width: 3.4rem;
 }
 
@@ -471,7 +478,8 @@
 	height: 0.44rem;
 }
 
-.news-center-listItemText, .news-center-listItemDate {
+.news-center-listItemText, 
+.news-center-listItemDate {
 	font-size: 0.12rem;
 	font-family: Source Han Sans CN;
 	font-weight: 400;
