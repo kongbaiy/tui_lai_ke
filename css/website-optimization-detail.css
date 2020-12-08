@@ -1,0 +1,141 @@
+.detail-info {
+    padding: 0 0.13rem;
+}
+
+.detail-info-header {
+    padding: 0.25rem 0;
+}
+
+.detail-info-title {
+    font-size: 0.2rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.34rem;
+    color: #262626;
+}
+
+.detail-info-text {
+    margin-top: 0.1rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.11rem;
+    color: #999;
+}
+
+.detail-info-text span:nth-child(n + 2) {
+    margin-left: 0.2rem;
+}
+
+.detail-info-intro {
+    overflow: hidden;
+    padding-top: 0.2rem;
+    border-top: 1px solid #ccc;
+}
+
+.detail-info-introCell {
+    margin-bottom: 0.15rem;
+}
+
+.detail-info-introTitle {
+    font-size: 0.15rem;
+    font-family: Source Han Sans CN;
+    font-weight: 700;
+    line-height: 0.26rem;
+    color: #262626;
+}
+
+.detail-info-introText {
+    margin-top: 0.1rem;
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.24rem;
+    color: #666;
+}
+
+.list-box {
+    padding: 0.05rem 0.13rem 0.5rem;
+}
+
+.list {
+    overflow: hidden;
+}
+
+.list-item {
+    margin-bottom: 0.2rem;
+    height: 2.15rem;
+    font-size: 0;
+}
+
+.list-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list-device {
+    overflow: hidden;
+    margin-top: 0.15rem;
+}
+
+.list-device-item {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.7rem;
+    height: 0.45rem;
+    border: 1px solid #DA3021;
+    outline: none;
+}
+
+.list-device-item:first-child {
+    margin-right: 0.05rem;
+}
+
+.list-device-itemText {
+    font-size: 0.13rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #DA3021;
+}
+
+.list-device-itemText:first-child {
+    margin-right: 0.1rem;
+    padding-right: 0.2rem;
+    border-right: 1px solid #DA3021;
+}
+
+.list-device-itemText:nth-child(2) {
+    margin-left: 0.1rem;
+    padding-left: 0.2rem;
+    border-left: 1px solid #DA3021;
+}
+
+.list-device-itemImg {
+    width: 0.08rem;
+    height: 0.15rem;
+}
+
+.list-device-item:hover{
+   background-color: #DA3021;
+}
+
+.list-device-prev:hover .list-device-itemText{
+    border-left-color: #fff;
+    color: #fff;
+}
+
+.list-device-next:hover .list-device-itemText{
+    border-right-color: #fff;
+    color: #fff;
+}
+
+.list-device-prev:hover .list-device-itemImg {
+    content: url('../imgs/16-30_2.png');
+}
+
+.list-device-next:hover .list-device-itemImg {
+    content: url('../imgs/16-30-2_2.png');
+}

@@ -54,6 +54,7 @@
     color: #fff;
 }
 
+/* 导航 */
 .nav {
     overflow: hidden;
     margin: 0.2rem 0.13rem;
@@ -88,4 +89,69 @@
     margin-right: 0.08rem;
     width: 0.19rem;
     height: 0.19rem;
+}
+
+/* 搜索 */
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.05rem 0.13rem 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 0.1rem;
+    width: 2.55rem;
+    height: 0.35rem;
+    background-color: #f7f7f7;
+}
+
+.search-icon {
+    margin-right: 0.08rem;
+    width: 0.14rem;
+}
+
+.search-input {
+    flex: 1;
+    background-color: transparent;
+    font-size: 0.13rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.8rem;
+    height: 0.35rem;
+    background-color: #DC000C;
+    border-radius: 0.05rem;
+    font-size: 0.15rem;
+    color: #fff;
+}
+
+.filter-btn-icon {
+    margin-right: 0.05rem;
+    width: 0.15rem;
+    height: 0.15rem;
+}
+
+.list-box {
+    padding: 0 0.13rem 0.5rem;
+}
+
+.list {
+    overflow: hidden;
+}
+
+.list-paging {
+    margin-top: 0.2rem;
 }

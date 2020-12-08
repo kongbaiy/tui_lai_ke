@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<meta name="full-screen" content="yes">
+		<meta name="x5-fullscreen" content="true">
+		<meta name="browsermode" content="application">
+		<meta name="x5-page-mode" content="app"> 
+		<meta name="apple-mobile-web-app-capable" content="no" />
+		<meta name="format-detection" content="telephone=no,email=no,adress=no"/>
+		<title>新闻资讯</title>
+		<link rel="stylesheet" type="text/css" href="common/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/news.css"/>
+		<script src="common/js/rem.js"></script>
+		<script src="common/js/ios.js"></script>
+		<script src="common/js/jquery-1.8.3.min.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/webcomponentsjs/2.5.0/custom-elements-es5-adapter.min.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/webcomponentsjs/2.5.0/webcomponents-bundle.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/webcomponentsjs/2.5.0/webcomponents-loader.min.js"></script>
+	</head>
+	<body>
+		<script src="./components/navbar/TopNavbar.js"></script>
+		<top-navbar></top-navbar>
+		
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="imgs/750-300_2.jpg" alt="" class="swiper-slide-img" />
+					<div class="swiper-slide-info">
+						<p class="swiper-slide-title">新闻资讯</p>
+						<p class="swiper-slide-text">服务有起点，满意无终点！坚持为客户提供有价值的服务和内容</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 导航 -->
+		<div class="nav">
+			<div class="nav-item nav-item_active">最新动态</div>
+			<div class="nav-item">建站常识</div>
+			<div class="nav-item">网站优化</div>
+			<div class="nav-item">公司新闻</div>
+		</div>
+
+		<div class="list-box">
+			<div class="list">
+				<div class="list-header">
+					<img src="imgs/700-400.jpg" alt="" class="list-header-img" />
+					<div  class="list-header-info">
+						<p class="list-header-title c-text-over_clamp-1">网站建成后为什么需要维护费？</p>
+						<p class="list-header-text c-text-over_clamp-2">基本上所有企业做网站找供应商的时候都会牵扯到一个网站续费问题，当问到网站为什么还需要续费的...</p>
+						<div class="list-header-cell">
+							<p class="list-header-date">2020-10-17</p>
+							<p class="list-header-more">More+</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="list-item">
+					<div class="list-item-left">
+						<p class="list-item-num">17</p>
+						<p class="list-item-date">2020.10</p>
+					</div>
+					<div class="list-item-right">
+						<p class="list-item-title c-text-over_clamp-1">网站建成后为什么需要维护费？</p>
+						<p class="list-item-text c-text-over_clamp-2">基本上所有企业做网站找供应商的时候都会牵扯到一个网站续费问题，当问到网站为什么...</p>
+						<div class="list-item-cell">
+							<p class="list-item-tag"><img src="imgs/20-20.png" alt="" class="list-item-tagIcon" />企业网站建设</p>
+							<p class="list-item-tag">网站排名优化</p>
+						</div>
+					</div>
+				</div>
+				<div class="list-item">
+					<div class="list-item-left">
+						<p class="list-item-num">17</p>
+						<p class="list-item-date">2020.10</p>
+					</div>
+					<div class="list-item-right">
+						<p class="list-item-title c-text-over_clamp-1">网站建成后为什么需要维护费？</p>
+						<p class="list-item-text c-text-over_clamp-2">基本上所有企业做网站找供应商的时候都会牵扯到一个网站续费问题，当问到网站为什么...</p>
+						<div class="list-item-cell">
+							<p class="list-item-tag"><img src="imgs/20-20.png" alt="" class="list-item-tagIcon" />企业网站建设</p>
+							<p class="list-item-tag">网站排名优化</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="c-pagingT1 list-paging">
+				<div class="c-pagingT1-next">上一页</div>
+				<div class="c-pagingT1-page">1/100</div>
+				<div class="c-pagingT1-prev">下一页</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<script src="./components/footer/index.js"></script>
+		<footer-info></footer-info>
+		
+		<!-- tabbar -->
+		<script src="./components/navbar/Tabbar.js"></script>
+		<tab-bar activeIndex="0"></tab-bar>
+	</body>
+</html>

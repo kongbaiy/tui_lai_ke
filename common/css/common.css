@@ -67,6 +67,7 @@
 }
 
 /* 1rem/100px */
+/* icon */
 .c-left-arrowIcon {
 	width: 0.09rem;
 	height: 0.15rem;
@@ -89,6 +90,17 @@
 	width: 100%;
 	height: 0.45rem;
 	border-radius: 0.08rem;
+	font-size: 0.16rem;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	color: #fff;
+	line-height: 0.45rem;
+	background-color: #DC000C;
+}
+
+.c-btn_45-no-radius {
+	width: 100%;
+	height: 0.45rem;
 	font-size: 0.16rem;
 	font-family: Source Han Sans CN;
 	font-weight: 400;
@@ -147,4 +159,78 @@
 
 .c-module-titleT2_english {
 	color: #fff;
+}
+
+
+/* components */
+.c-listT1 {
+	margin-top: 0.2rem;
+}
+
+.c-listT1-item {
+	margin-bottom: 0.15rem;
+	background-color: #F7F7F7;
+	font-size: 0;
+}
+
+.c-listT1-itemImg {
+	width: 100%;
+	height: 2.1rem;
+	object-fit: cover;
+}
+
+.c-listT1-itemInfo {
+	padding: 0.17rem 0.1rem;
+}
+
+.c-listT1-itemTitle {
+	font-size: 0.17rem;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	line-height: 0.17rem;
+	color: #262626;
+}
+
+.c-listT1-itemText {
+	margin-top: 0.05rem;
+	font-size: 0.14rem;
+	font-family: Source Han Sans CN;
+	font-weight: 400;
+	/* line-height: 0.11rem; */
+	color: #999;
+}
+
+/* page */
+.c-pagingT1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-pagingT1-next, 
+.c-pagingT1-page, 
+.c-pagingT1-prev {
+    width: 1.1rem;
+    height: 0.35rem;
+    font-size: 0.14rem;
+    font-family: Source Han Sans SC;
+    font-weight: 400;
+    text-align: center;
+    line-height: 0.35rem;
+}
+
+.c-pagingT1-next {
+    border: 1px solid #E6E6E6;
+    background-color: #E6E6E6;
+    color: #262626;
+}
+
+.c-pagingT1-page {
+    border: 1px solid #E6E6E6;
+}
+
+.c-pagingT1-prev {
+    border: 1px solid #DC000C;
+    background-color: #DC000C;
+    color: #fff;
 }

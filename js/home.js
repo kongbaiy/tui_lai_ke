@@ -1,4 +1,20 @@
 (function(win, doc) {
+	// 轮播
+	var banner = new Swiper(".banner",{
+		pagination : '.swiper-pagination',
+		autoplayDisableOnInteraction : false,
+		autoplay : 5000,
+		loop: true
+	});
+	
+	// 方案
+	var industrySolutions = new Swiper(".industry-solutions-banner",{
+		pagination : '.swiper-pagination',
+		autoplayDisableOnInteraction : false,
+		autoplay : 5000,
+		loop: true
+	});
+	
 	//服务案例 
 	$('.services-case-navItem').on('click', function() {
 		$('.services-case-navItem').removeClass('services-case-navItem_active');

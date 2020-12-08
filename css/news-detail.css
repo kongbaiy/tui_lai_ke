@@ -1,0 +1,225 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.detail-info {
+    overflow: hidden;
+    padding: 0 0.13rem;
+    background-color: #fff;
+}
+
+.detail-info-header {
+    padding: 0.25rem 0;
+}
+
+.detail-info-title {
+    font-size: 0.2rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.34rem;
+    color: #262626;
+}
+
+.detail-info-text {
+    margin-top: 0.1rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.11rem;
+    color: #999;
+}
+
+.detail-info-text span:nth-child(n + 2) {
+    margin-left: 0.2rem;
+}
+
+.detail-info-content {
+    position: relative;
+    padding: 0.3rem 0;
+    border-top: 1px solid #ccc;
+}
+
+.detail-info-contentText {
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.24rem;
+    text-indent: 0.28rem;
+    color: #262626;
+}
+
+.detail-info-contentText:nth-child(n + 2) {
+    margin-top: 0.2rem;
+}
+
+.detail-info-contentImg {
+    margin-top: 0.2rem;
+    width: 100%;
+}
+
+.detail-info-more {
+    overflow: hidden;
+    margin-bottom: 0.2rem;
+}
+
+.detail-info-moreItemIcon {
+    margin-right: 0.1rem;
+    width: 0.15rem;
+    height: 0.15rem;
+}
+
+.detail-info-moreItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.15rem;
+    padding: 0 0.1rem;
+    height: 0.3rem;
+    background-color: #f0f0f0;
+    border-radius: 0.15rem;
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #666;
+}
+
+/* 相关文章 */
+.related-articles {
+    margin-top: 0.1rem;
+    padding: 0.25rem 0.13rem 0.35rem;
+    background-color: #fff;
+}
+
+.related-articles-item {
+    overflow: hidden;
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #E6E6E6;
+
+}
+
+.related-articles-cell {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.related-articles-title {
+    font-size: 0.18rem;
+    font-family: Source Han Sans CN;
+    font-weight: 700;
+    color: #262626;
+}
+
+.related-articles-more {
+    font-size: 0.13rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+}
+
+.related-articles-itemTitle {
+    font-size: 0.16rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #404040;
+}
+
+.related-articles-itemText {
+    position: relative;
+    margin-top: 0.1rem;
+    padding-bottom: 0.18rem;
+    height: 0.36rem;
+    font-size: 0.13rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999;
+}
+
+.related-articles-itemText::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0.2rem;
+    height: 1px;
+    background-color: #999;
+}
+
+.related-articles-itemDate {
+    margin-top: 0.1rem;
+    font-size: 12px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 8px;
+    color: #999;
+}
+
+/* 免费获取网站建设与改版方案报价 form */
+.form-box {
+    padding: 0.35rem 0.25rem 0.5rem;
+    background-image: url(../imgs/750-970.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-title {
+    font-size: 0.17rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    line-height: 0.11rem;
+    text-align: center;
+    color: #fff;
+}
+
+.form {
+    margin-top: 0.25rem;
+    padding: 0.25rem;
+    background-color: rgba(233,233,233,1);
+}
+
+.form-input {
+    box-sizing: border-box;
+    margin-bottom: 0.1rem;
+    padding: 0 0.1rem;
+    width: 100%;
+    height: 0.38rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.38rem;
+}
+
+.form-input::placeholder, 
+.form-textarea::placeholder {
+    color: #ccc;
+}
+
+.form-textareaBox {
+    padding: 0.13rem 0;
+    height: 0.59rem;
+    background-color: #fff;
+}
+
+.form-textarea {
+    box-sizing: border-box;
+    padding: 0 0.1rem;
+    width: 100%;
+    height: 100%;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.11rem;
+}
+
+.form-submit-btn {
+    margin-top: 0.15rem;
+}
+
+.form-hint {
+    margin-top: 0.25rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.21rem;
+    color: rgba(255,255,255,0.5);
+}

@@ -1,0 +1,258 @@
+.swiper-container {
+    height: 1.5rem;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide-title {
+    position: relative;
+    padding-bottom: 0.1rem;
+    font-size: 0.18rem;
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+    line-height: 0.3rem;
+    color: #fff;
+}
+
+.swiper-slide-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.25rem;
+    height: 1px;
+    background-color: #DC000C;
+}
+
+.swiper-slide-text {
+    margin-top: 0.1rem;
+    font-size: 0.09rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.16rem;
+    color: #fff;
+}
+
+/* 导航 */
+.nav {
+    overflow: hidden;
+    padding: 0.25rem 0.13rem;
+    background-color: #f7f7f7;
+}
+
+.nav-item {
+    float: left;
+    margin-right: 0.095rem;
+    width: 0.8rem;
+    height: 0.35rem;
+    background-color: #fff;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.35rem;
+    text-align: center;
+    color: #404040;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-item_active {
+    background-color: #DC000C;
+    color: #fff;
+}
+
+.list-box {
+    margin: 0.2rem 0.13rem 0.5rem;
+}
+
+.list {
+    overflow: hidden;
+}
+
+.list-header {
+    margin-bottom: 0.15rem;
+    background-color: rgba(255,254,255,1);
+    border: 1px solid #e6e6e6;
+}
+
+.list-header-img {
+    width: 100%;
+    height: 2rem;
+    object-fit: cover;
+}
+
+.list-header-info {
+    padding: 0.2rem 0.1rem;
+}
+
+.list-header-title {
+    font-size: 0.18rem;
+    font-family: Source Han Sans CN;
+    font-weight: 700;
+    line-height: 0.3rem;
+    color: #262626;
+}
+
+.list-header-text {
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.24rem;
+    color: #999;
+}
+
+.list-header-cell {
+    margin-top: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-header-date {
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.24rem;
+    color: #999;
+}
+
+.list-header-more {
+    position: relative;
+    font-size: 0.14rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.24rem;
+    color: #DC000C;
+}
+
+.list-header-more::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -0.6rem;
+    transform: translateY(-50%);
+    width: 0.5rem;
+    height: 0.01rem;
+    background-color: #DC000C;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.1rem;
+    padding: 0.13rem 0;
+    border: 1px solid #e6e6e6;
+}
+
+.list-item-left {
+    width: 0.75rem;
+    text-align: center;
+}
+
+.list-item-num {
+    position: relative;
+    padding-bottom: 0.07rem;
+    font-size: 0.24rem;
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+    color: #404040;
+}
+
+.list-item-num::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.15rem;
+    height: 0.01rem;
+    background-color: #ccc;
+}
+
+.list-item-date {
+    margin-top: 0.1rem;
+    font-size: 0.13rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #404040;
+}
+
+.list-item-right {
+    flex: 1;
+    padding: 0 0.13rem;
+    border-left: 1px solid #e6e6e6;
+}
+
+.list-item-title {
+    font-size: 0.15rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.26rem;
+    color: #262626;
+}
+
+.list-item-text {
+    height: 0.4rem;
+    font-size: 0.12rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    line-height: 0.21rem;
+    color: #999;
+}
+
+.list-item-cell {
+    overflow: hidden;
+    margin-top: 0.1rem;
+}
+
+.list-item-tag {
+    float: left;
+    display: flex;
+    align-items: center;
+    font-size: 0.1rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #ccc;
+}
+
+.list-item-tag:first-child {
+    padding-right: 0.05rem;
+}
+
+.list-item-tagIcon {
+    margin-right: 0.05rem;
+    height: 0.1rem;
+}
+
+.list-item-tag:nth-child(n + 2) {
+    padding: 0 0.05rem;
+    border-left: 1px solid #ccc;
+}
+
+.list-paging {
+    margin-top: 0.2rem;
+}
