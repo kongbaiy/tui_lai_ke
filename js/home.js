@@ -31,6 +31,34 @@
 		autoplay : 5000,
 		loop: true
 	});
+
+	var ourServicesIcons = [
+		{ path: 'imgs/orl_1.png', activePath: 'imgs/orl_active_1.png', activeStatus: false },
+		{ path: 'imgs/orl_2.png', activePath: 'imgs/orl_active_2.png', activeStatus: false },
+		{ path: 'imgs/orl_3.png', activePath: 'imgs/orl_active_3.png', activeStatus: false },
+		{ path: 'imgs/orl_4.png', activePath: 'imgs/orl_active_4.png', activeStatus: false }
+	];
+	// 我们的服务
+	$('.our-services-listItem').on('click', function() {
+		var index = $(this).index(), 
+			item_el = $('.our-services-listItem'),
+			item_icon_el = $('.our-services-listItemUlIcon'),
+			ul_el = $('.our-services-listItemUl'), 
+			li_box_el = $('.our-services-listItemLiBox');
+		
+		if(ourServicesIcons[index].activeStatus) {
+			item_el.eq(index).removeClass('our-services-listItem_active');
+			item_icon_el.eq(index).attr('src', ourServicesIcons[index].path);
+			ul_el.eq(index).removeClass('our-services-listItemUl_active');
+			li_box_el.eq(index).hide();
+		} else {
+			item_el.eq(index).addClass('our-services-listItem_active');
+			item_icon_el.eq(index).attr('src', ourServicesIcons[index].activePath);
+			ul_el.eq(index).addClass('our-services-listItemUl_active');
+			li_box_el.eq(index).show();
+		}
+		ourServicesIcons[index].activeStatus = !ourServicesIcons[index].activeStatus;
+	});
 	
 	//服务案例 
 	$('.services-case-navItem').on('click', function() {
