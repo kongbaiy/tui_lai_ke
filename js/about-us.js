@@ -26,7 +26,11 @@
 
 	// 关于我们
 	$('.nav-item').on('click', function() {
+		var index = $(this).index();
+
 		$('.nav-item').removeClass('nav-item_active');
 		$(this).addClass('nav-item_active');
+		$('.header-content-text').hide();
+		$('.header-content-text').eq(index).show();
 	});
 })(window, document);

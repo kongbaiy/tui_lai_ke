@@ -22,6 +22,7 @@
 			}
 			
 			.tabbar-item {
+				width: 25%;
 				text-align: center;
 				font-size: 0;
 			}
@@ -47,7 +48,7 @@
 		
 		<div class="tabbar">
 			<div class="tabbar-item">
-				<img src="imgs/active_tabbar_icon_1.png" class="tabbar-item-icon" />
+				<img src="imgs/tabbar_icon_1.png" class="tabbar-item-icon" />
 				<p class="tabbar-item-text">首页</p>
 			</div>
 			<div class="tabbar-item">
@@ -67,7 +68,6 @@
 	`;
 	
 	const currentDom = document.currentScript.ownerDocument;
-	
 	class Tabbar extends HTMLElement {
 		static get observedAttributes() {
 			return ['activeIndex', '']
@@ -79,7 +79,7 @@
 		
 		set activeIndex(val) {
 			console.log('set activeIndex');
-			this.setAttribute('activeIndex', val)
+			this.setAttribute('activeIndex', val);
 		}
 			
 		constructor() {
@@ -88,7 +88,6 @@
 			const { attributes } = shadowRoot.host;
 			
 			shadowRoot.innerHTML = template;
-			
 		}
 		
 		connectedCallback() {
@@ -96,14 +95,28 @@
 			// 相较于constructor只会执行一次，这个生命周期每次将节点连接到dom时都会调用
 			// 可能会执行多次(比如同一个自定义元素remove, append多次)
 			if(this.activeIndex != null) {
+				const index = parseInt(this.activeIndex);
 				const tabbar_item_el = this.shadowRoot.querySelectorAll('.tabbar-item');
+				const tabbar_item_icon_el = this.shadowRoot.querySelectorAll('.tabbar-item-icon');
+				const icons_path = [
+					{ path: 'imgs/tabbar_icon_1.png', activePath: 'imgs/active_tabbar_icon_1.png', url: 'home.html' },
+					{ path: 'imgs/tabbar_icon_2.png', activePath: 'imgs/active_tabbar_icon_2.png', url: 'case.html' },
+					{ path: 'imgs/tabbar_icon_3.png', activePath: 'imgs/active_tabbar_icon_3.png', url: '' },
+					{ path: 'imgs/tabbar_icon_4.png', activePath: 'imgs/active_tabbar_icon_4.png', url: '' },
+
+				];
 				
-				// tabbar_item_el[parseInt(this.activeIndex)].className += ' tabbar-item_active';
-				$(tabbar_item_el).eq(parseInt(this.activeIndex)).addClass('tabbar-item_active');
+				tabbar_item_el[index].className += ' tabbar-item_active';
+				tabbar_item_icon_el[index].setAttribute('src', icons_path[index].activePath);
+				
 				$(tabbar_item_el).on('click', function() {
-					
-					$(tabbar_item_el).removeClass('tabbar-item_active');
-					$(this).addClass('tabbar-item_active');
+					let click_index = $(this).index();
+					let url =  icons_path[click_index].url;
+
+					// if(click_index != index && url) {
+					// 	window.location.href = url;
+					// }
+					window.location.href = url;
 				});
 			}
 		}

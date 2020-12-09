@@ -68,8 +68,12 @@
 
 	// 关于我们
 	$('.about-us-navItem').on('click', function() {
+		var index = $(this).index();
+
 		$('.about-us-navItem').removeClass('about-us-navItem_active');
 		$(this).addClass('about-us-navItem_active');
+		$('.about-us-articleText').hide();
+		$('.about-us-articleText').eq(index).show();
 	});
 	
 	// 新闻中心

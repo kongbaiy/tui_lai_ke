@@ -19,9 +19,11 @@
 		<script src="https://cdn.bootcdn.net/ajax/libs/webcomponentsjs/2.5.0/custom-elements-es5-adapter.min.js"></script>
 		<script src="https://cdn.bootcdn.net/ajax/libs/webcomponentsjs/2.5.0/webcomponents-bundle.js"></script>
 		<script src="https://cdn.bootcdn.net/ajax/libs/webcomponentsjs/2.5.0/webcomponents-loader.min.js"></script>
+		<script src="./components/navbar/TopNavbar.js"></script>
+		<script src="./components/footer/index.js"></script>
+		<script src="./components/navbar/Tabbar.js"></script>
 	</head>
 	<body>
-		<script src="./components/navbar/TopNavbar.js"></script>
 		<top-navbar></top-navbar>
 		
 		<div class="swiper-container">
@@ -47,18 +49,20 @@
 		<div class="list-box">
 			<div class="list">
 				<div class="list-header">
-					<img src="imgs/700-400.jpg" alt="" class="list-header-img" />
-					<div  class="list-header-info">
-						<p class="list-header-title c-text-over_clamp-1">网站建成后为什么需要维护费？</p>
-						<p class="list-header-text c-text-over_clamp-2">基本上所有企业做网站找供应商的时候都会牵扯到一个网站续费问题，当问到网站为什么还需要续费的...</p>
-						<div class="list-header-cell">
-							<p class="list-header-date">2020-10-17</p>
-							<p class="list-header-more">More+</p>
+					<a href="news-detail.html">
+						<img src="imgs/700-400.jpg" alt="" class="list-header-img" />
+						<div  class="list-header-info">
+							<p class="list-header-title c-text-over_clamp-1">网站建成后为什么需要维护费？</p>
+							<p class="list-header-text c-text-over_clamp-2">基本上所有企业做网站找供应商的时候都会牵扯到一个网站续费问题，当问到网站为什么还需要续费的...</p>
+							<div class="list-header-cell">
+								<p class="list-header-date">2020-10-17</p>
+								<p class="list-header-more">More+</p>
+							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 	
-				<div class="list-item">
+				<a href="news-detail.html" class="list-item">
 					<div class="list-item-left">
 						<p class="list-item-num">17</p>
 						<p class="list-item-date">2020.10</p>
@@ -71,8 +75,8 @@
 							<p class="list-item-tag">网站排名优化</p>
 						</div>
 					</div>
-				</div>
-				<div class="list-item">
+				</a>
+				<a href="news-detail.html" class="list-item">
 					<div class="list-item-left">
 						<p class="list-item-num">17</p>
 						<p class="list-item-date">2020.10</p>
@@ -85,7 +89,7 @@
 							<p class="list-item-tag">网站排名优化</p>
 						</div>
 					</div>
-				</div>
+				</a>
 			</div>
 			
 			<div class="c-pagingT1 list-paging">
@@ -96,11 +100,9 @@
 		</div>
 
 		<!-- footer -->
-		<script src="./components/footer/index.js"></script>
 		<footer-info></footer-info>
 		
 		<!-- tabbar -->
-		<script src="./components/navbar/Tabbar.js"></script>
 		<tab-bar activeIndex="0"></tab-bar>
 	</body>
 </html>

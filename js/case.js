@@ -15,6 +15,8 @@
             $('.nav-item-img').eq(forIndex).attr('src', navIconPaths[forIndex].path)
         });
         $('.nav-item-img').eq(index).attr('src', navIconPaths[index].activePath);
+        $('.list-box').hide();
+        $('.list-box').eq(index).show();
     });
 
     // 筛选弹窗
