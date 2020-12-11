@@ -62,8 +62,24 @@
 	
 	//服务案例 
 	$('.services-case-navItem').on('click', function() {
+		var nav_el = $('.services-case-nav');
+		var box_width = nav_el.width() / 2;
+		var index = $(this).index();
+		var start_scroll_val = $(this).offset().left +  $(this).width();
+		var scroll_left = $(this).width() * index;
+		
 		$('.services-case-navItem').removeClass('services-case-navItem_active');
 		$(this).addClass('services-case-navItem_active');
+		
+		if(start_scroll_val > box_width) {
+			nav_el.animate({
+				scrollLeft: scroll_left
+			}, 200);
+		} else {
+			nav_el.animate({
+				scrollLeft: 0
+			}, 200);
+		}
 	});
 
 	// 关于我们

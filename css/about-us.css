@@ -1,5 +1,7 @@
 .header {
+	box-sizing: border-box;
     padding: 0.75rem 0.3rem 0.37rem;
+	min-height: 6.53rem;
     background-image: url(../imgs/750-1206_2.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -38,7 +40,7 @@
     font-size: 0.2rem;
     font-family: Source Han Sans CN;
     font-weight: bold;
-    line-height: 0.11rem;
+    /* line-height: 0.11rem; */
     color: #fff;
 }
 
@@ -385,6 +387,7 @@
     width: 100%;
 }
 
+/* 合作客户 */
 .cooperative-client {
     padding: 0.35rem 0.2rem 0.5rem;
     background-color: #f7f7f7;

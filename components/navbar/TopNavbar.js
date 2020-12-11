@@ -72,6 +72,56 @@
 			.top-navbar-blank {
 				height: 0.44rem;
 			}
+			
+			.menu-popup-bg {
+				display: none;
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 30;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,0.5);
+			}
+			
+			.menu-popup {
+				transition: all 200ms;
+				box-sizing: border-box;
+				overflow-y: scroll;
+				-webkit-overflow-scrolling: touch;
+				position: fixed;
+				top: 0.44rem;
+				right: -1.97rem;
+				z-index: 30;
+				padding: 0 0.15rem;
+				width: 1.97rem;
+				max-height: calc(100% - 1.05rem);
+				background-color: #fff;
+			}
+			
+			.menu-nav-list {
+				margin-top: 0.2rem;
+			}
+			
+			.menu-nav-listItem {
+				padding: 0.15rem 0;
+				border-bottom: 1px solid #CBCBCB;
+			}
+			
+			.menu-nav-listItem a {
+				font-size: 0.15rem;
+				font-family: Source Han Sans CN;
+				font-weight: 400;
+				color: #333;
+			}
+			
+			.menu-nav-slogan {
+				padding: 0.18rem 0;
+				font-size: 0.14rem;
+				font-family: FZZhengHeiS-EB-GB;
+				font-weight: bold;
+				color: #333;
+			}
 		</style>
 		
 		<div class="top-navbar">
@@ -88,6 +138,34 @@
 			</div>
 		</div>
 		<div class="top-navbar-blank"></div>
+		
+		<div class="menu-popup-bg"></div>
+		<div class="menu-popup">
+			<ul class="menu-nav-list">
+				<li class="menu-nav-listItem">
+					<a href="home.html">网站首页</a>
+				</li>
+				<li class="menu-nav-listItem">
+					<a href="website.html">网站建设</a>
+				</li>
+				<li class="menu-nav-listItem">
+					<a href="website-optimization.html">网站优化</a>
+				</li>
+				<li class="menu-nav-listItem">
+					<a href="plane-designs.html">平面设计</a>
+				</li>
+				<li class="menu-nav-listItem">
+					<a href="case">成功案例</a>
+				</li>
+				<li class="menu-nav-listItem">
+					<a href="news.html">新闻资讯</a>
+				</li>
+				<li class="menu-nav-listItem">
+					<a href="about-us.html">关于我们</a>
+				</li>
+			</ul>
+			<p class="menu-nav-slogan">专注 ▪ 专业 ▪ 精准 ▪ 效果</p>
+		</div>
 	`;
 	
 	class TopNavbar extends HTMLElement {
@@ -102,10 +180,10 @@
 			this._root = shadowRoot;
 
 			const menu_el = shadowRoot.querySelector('.menu-icon');
-			// const popupbg_el = shadowRoot.querySelector('.popup-bg');
+			const menu_popupbg_el = shadowRoot.querySelector('.menu-popup-bg');
 
-			// menu_el.addEventListener('click', this.onMenu.bind(this));
-			// popupbg_el.addEventListener('click', this.onPopupBg.bind(this));
+			menu_el.addEventListener('click', this.onMenu.bind(this));
+			menu_popupbg_el.addEventListener('click', this.onPopupBg.bind(this));
 		}
 		
 		connectedCallback() {
@@ -128,20 +206,20 @@
 		}
 
 		onMenu() {
-			const popupbg_el = this._root.querySelector('.popup-bg');
-			const popup_el = this._root.querySelector('.popup');
+			const men_popupbg_el = this._root.querySelector('.menu-popup-bg');
+			const men_popup_el = this._root.querySelector('.menu-popup');
 
-			popupbg_el.setAttribute('style', 'display: block');
-			popup_el.setAttribute('style', 'right:0;');
+			men_popupbg_el.setAttribute('style', 'display: block');
+			men_popup_el.setAttribute('style', 'right:0;');
 			this.setPageStopScroll(true);
 		}
 
 		onPopupBg() {
-			const popupbg_el = this._root.querySelector('.popup-bg');
-			const popup_el = this._root.querySelector('.popup');
+			const men_popupbg_el = this._root.querySelector('.menu-popup-bg');
+			const men_popup_el = this._root.querySelector('.menu-popup');
 
-			popupbg_el.setAttribute('style', 'display: none;');
-			popup_el.setAttribute('style', 'right: -2.5rem;');
+			men_popupbg_el.setAttribute('style', 'display: none;');
+			men_popup_el.setAttribute('style', 'right: -2.5rem;');
 			this.setPageStopScroll(false);
 		}
 

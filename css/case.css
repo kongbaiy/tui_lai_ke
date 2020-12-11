@@ -170,7 +170,6 @@
 .popup {
     transition: all 200ms;
     box-sizing: border-box;
-    position: relative;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     position: fixed;
